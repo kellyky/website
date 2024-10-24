@@ -1,15 +1,20 @@
+html, body {
+  height: 100%;
+  color: yellow;
+}
+
 body {
   background-image: url("../images/keem_achill.jpg");
   background-repeat:no-repeat;
   background-color: black;
   background-size: cover;
   overflow: scroll;
+  font-family: courier, mono;
+  padding: 10px;
 }
 
 h1 {
   text-align: right;
-  font-family: courier, mono;
-  color: pink;
   text-transform: uppercase;
 }
 
@@ -22,10 +27,8 @@ ul {
 
 li {
   text-align: right;
-  padding: 5px;
-  font-family: courier, mono;
+  padding-top: 5px;
   list-style: none;
-  font-size: 1em;
 }
 
 /* Links */
