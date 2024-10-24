@@ -6,6 +6,15 @@ body {
   overflow: scroll;
 }
 
+h1 {
+  text-align: right;
+  font-family: courier, mono;
+  color: pink;
+  text-transform: uppercase;
+}
+
+/* Lists */
+
 ul {
   color: white;
   text-align: right;
