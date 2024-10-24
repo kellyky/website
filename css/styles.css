@@ -51,3 +51,12 @@ a:visited {
 a:hover {
   color: hotpink;
 }
+
+#index {
+  float: right;
+}
+
+hr {
+  float: right;
+  width: 200px;
+}
