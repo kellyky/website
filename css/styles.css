@@ -12,6 +12,30 @@ ul {
 }
 
 li {
-  padding: 3px;
-  font-family: courier;
+  text-align: right;
+  padding: 5px;
+  font-family: courier, mono;
+  list-style: none;
+  font-size: 1em;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+  color: pink;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
 }
