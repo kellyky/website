@@ -1,0 +1,17 @@
+body {
+  background-image: url("../images/keem_achill.jpg");
+  background-repeat:no-repeat;
+  background-color: black;
+  background-size: cover;
+  overflow: scroll;
+}
+
+ul {
+  color: white;
+  text-align: right;
+}
+
+li {
+  padding: 3px;
+  font-family: courier;
+}
