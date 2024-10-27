@@ -74,3 +74,15 @@ hr {
   float: right;
   width: 200px;
 }
+
+footer hr {
+  margin: 10px;
+}
+
+footer ul {
+  display: inline-block;
+}
+
+footer li {
+ padding: 10px;
+}
