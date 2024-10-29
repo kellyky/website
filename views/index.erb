@@ -1,0 +1,19 @@
+<% require 'erb' %>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Kelly's Site</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+</head>
+<body>
+  <%= File.read('partials/_header.erb') %>
+
+    <ul>
+      <li><a href="./today_i_learned.html">Today I Learned</a></li>
+    </ul>
+
+  <%= File.read('partials/_footer.erb') %>
+</body>
+</html>

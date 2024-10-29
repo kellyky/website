@@ -1,4 +1,4 @@
-
+<% require 'erb' %>
 <html>
 <head>
   <meta charset='utf-8'>
@@ -8,16 +8,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
 </head>
 <body>
-  <header>
-  <ul>
-    <li class="header"><a href="https://aavalam.org/" target="_blank">Aavalam Home</a></li>
-    <li class="header">|</li>
-    <li class="header"><a href="./index.html">Kelly's Aavalam Space</a></li>
-  </ul>
-  <hr>
-  <br>
-</header>
-
+  <%= File.read('partials/_header.erb') %>
 
   <h1>Posts</h1>
   <ul>
@@ -27,18 +18,7 @@
     <li><a href="https://medium.com/@kelpopko/today-i-learned-searching-git-logs-by-author-2037e6c40c1e" target="_blank">git: git log author search</a></li>
   </ul> 
 
-  <footer>
-    <hr>
-    <br>
-    <ul>
-      <li class="footer"><a href="https://github.com/kellyky" target="_blank">GitHub</a></li>
-      <li class="footer"><a href="https://medium.com/@kelpopko" target="_blank">Medium</a></li>
-      <li class="footer"><a href="https://exercism.org/profiles/kellyky" target="_blank">Exercism</a></li>
-      <li class="footer"><a href="https://www.codewars.com/users/kellyky" target="_blank">CodeWars</a></li>
-      <li class="footer"><a href="https://www.linkedin.com/in/kelly-popko/" target="_blank">LinkedIn</a></li>
-    </ul>
-</footer>
-
+  <%= File.read('partials/_footer.erb') %>
 </body>
 </html>
 
