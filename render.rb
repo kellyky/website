@@ -1,14 +1,14 @@
 require 'erb'
+require 'pry-byebug'
 
 def render_partial(file_name)
-  File.read("partials/#{file_name}.erb")
+  File.read("views/partials/#{file_name}.erb")
 end
 
 def render_template(file_name)
   template = File.read("views/#{file_name}.erb")
   renderer = ERB.new(template)
   output = renderer.result(binding)
- 
   File.write("#{file_name}.html", output)  # Write output to HTML file
 end
 
