@@ -13,7 +13,7 @@ def render_template(file_name)
 end
 
 # List of main files to render
-main_files = ['index', 'today_i_learned', 'notes', 'resume']
+main_files = ['index', 'today_i_learned', 'notes']
 
 main_files.each do |file|
   render_template(file)
