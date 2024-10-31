@@ -11,7 +11,64 @@
 <body>
   <%= render_partial('_header') %>
 
-  Coming soon
+  <article>
+    <h2>Running tests continuously using `entr`</h2>
+
+    <code>
+    ls *.rb | entr ruby *_test.rb
+    </code>
+
+    <p>When you save a ruby file in that directory, the test refreshes and re-runs.</p>
+
+  <h3>Ruby</h3>
+
+  <h4>Minitest</hr>
+  <code>
+  ls *.rb | entr ruby *_test.rb
+  </code>
+
+  <h4>RSpec</h4>
+  <p>You need to include the path to the respective files - example with rspec using lib and spec directories.</p>
+  <code>
+  ls lib/*.rb | entr rspec spec/*
+  </code>
+
+
+  <h3>JavaScript/Yarn</h3>
+  <code>
+  ls *.js | entr yarn test
+  </code>
+
+  <h3>Elixir/Mix</h3>
+  <code>
+  ls *exs | entr mix test
+  </code>
+
+
+  <h2>Aliases</h2>
+  <p>You can alias these to something simper if you would like.</p>
+
+  <p>Example:</p>
+  <code>
+  alias minitest_feed="ls *.rb | entr ruby *_test.rb"
+
+  alias rspec_feed="ls lib/*.rb | entr rspec spec/*"
+
+  alias elixir_mix_test_feed="ls *exs | entr mix test"
+
+  alias yarn_test_feed="ls *.js | entr yarn test"
+  </code>
+
+
+  <h3>References</h3>
+  <ul>
+    <li><a href="https://github.com/eradman/entr">https://github.com/eradman/entr</a></li>
+    <li><a href="https://eradman.com/entrproject/">https://eradman.com/entrproject/</a></li>
+    <li><a href="https://eradman.com/entrproject/entr.1.html">https://eradman.com/entrproject/entr.1.html</a></li>
+</ul>
+
+  </article>
+
 
   <%= render_partial('_footer') %>
 </body>
