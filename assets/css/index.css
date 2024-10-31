@@ -1,0 +1,9 @@
+body {
+  background-image: url("../images/keem_achill.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-color: black;
+  background-size: cover;
+  overflow: scroll;
+}
+

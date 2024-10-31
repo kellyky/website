@@ -4,6 +4,12 @@ html, body {
 }
 
 body {
+  background-image: url("../images/myajima.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-color: black;
+  background-size: cover;
+  overflow: scroll;
   font-family: courier, mono;
   padding: 10px;
 }

@@ -1,0 +1,23 @@
+li.header, li.footer {
+  display: inline-block;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  right: 0;
+  z-index: 10;
+}
+
+footer hr {
+  margin: 10px;
+}
+
+footer ul {
+  display: inline-block;
+}
+
+footer li {
+ padding: 10px;
+}
