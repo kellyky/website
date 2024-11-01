@@ -1,23 +1,27 @@
 #!/usr/bin/env ruby
 require 'erb'
 
+# Render a partial by reading from the partials directory
 def render_partial(file_name)
   File.read("views/partials/#{file_name}.erb")
 end
 
+# Render a main template by reading from the views directory, compiling with
+# ERB, and writing HTML output
 def render_template(file_name)
   template = File.read("views/#{file_name}.erb")
   renderer = ERB.new(template, trim_mode: '%<>')
   output = renderer.result(binding)
-  File.write("#{file_name}.html", output)  # Write output to HTML file
+  File.write("#{file_name}.html", output)
 end
 
-# Filter to get .erb files (but not contents of partials/ directory)
-main_files = `ls views`.split.select do |file|
-  file.match?(/.erb$/)
+# Get all .erb files in the views directory, excluding contents of the partials/
+# directory
+main_files = Dir.glob('views/*.erb').map do |file|
+  File.basename(file, '.erb') # Capture base file name without extension
 end
 
-main_files.each do |file|
-  file_name, _ = file.split(".")
+# Render each main template
+main_files.each do |file_name|
   render_template(file_name)
 end
