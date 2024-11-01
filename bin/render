@@ -12,9 +12,12 @@ def render_template(file_name)
   File.write("#{file_name}.html", output)  # Write output to HTML file
 end
 
-# List of main files to render
-main_files = ['index', 'today_i_learned', 'notes']
+# Filter to get .erb files (but not contents of partials/ directory)
+main_files = `ls views`.split.select do |file|
+  file.match?(/.erb$/)
+end
 
 main_files.each do |file|
-  render_template(file)
+  file_name, _ = file.split(".")
+  render_template(file_name)
 end
