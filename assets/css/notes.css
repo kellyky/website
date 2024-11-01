@@ -5,5 +5,62 @@ body {
   background-color: black;
   background-size: cover;
   overflow: scroll;
+  text-align: right;
+}
+
+article {
+  background-color: black;
+  opacity: 0.5;
+  margin: 5px;
+  padding: 25px;
+  border-radius: 25px;
+  display: inline-block;
+  font-family: avenir;
+  text-align: left;
+}
+
+code {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-family: tahoma;
+}
+
+header {
+  color: black;
+}
+
+/* ul { */
+/*   display: block; */
+/* } */
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+  color: indigo;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+footer {
+  position: relative;
 }
 
