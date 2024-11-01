@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 require 'erb'
 
-# Render a partial by reading from the partials directory
+# Renders views/partials/_header.erb and views/partials/_footer.erb
+# in respective views/*.erb files
 def render_partial(file_name)
   File.read("views/partials/#{file_name}.erb")
 end
