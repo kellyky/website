@@ -1,10 +1,9 @@
 # About
 
-Website created initially as user space within [https://aavalam.org/](https://aavalam.org/). 
+A website and maybe proto-portfolio.
+A place I enjoy working on, while I learn the things and share the learnings.
 
-Planning to include coding notes, as well as links to blog/social channels. 
-
-Very much a work in progress being shaped as I work - so, we shall see!
+Created initially as user space within [https://aavalam.org/](https://aavalam.org/). 
 
 ## Visiting
 [https://aavalam.org/~kellyky/](https://aavalam.org/~kellyky/)
@@ -12,6 +11,7 @@ Very much a work in progress being shaped as I work - so, we shall see!
 Or
 
 [https://kellyky.github.io/website/](https://kellyky.github.io/website/)
+
 
 ## Setup
 No setup needed for visitors to either website above.
@@ -23,6 +23,35 @@ But to view the pages locally:
     - example `file:///Users/me/path/more-of-the-path/website/index.html`
 
 Page has a mix of internal/external links.
+
+## File Structure
+
+```plaintext
+├── README.md
+├── assets
+│   ├── css
+│   │   ├── header_footer.css
+│   │   ├── index.css
+│   │   ├── main.css
+│   │   ├── notes.css
+│   │   └── today_i_learned.css
+│   └── images
+│       ├── keel_achill.jpg
+│       ├── keem_achill.jpg
+│       └── myajima.png
+├── bin
+│   └── render
+├── index.html
+├── notes.html
+├── today_i_learned.html
+└── views
+    ├── index.erb
+    ├── notes.erb
+    ├── partials
+    │   ├── _footer.erb
+    │   └── _header.erb
+    └── today_i_learned.erb
+```
 
 ## Updates
 First time making updates: `chmod +x bin/render` for executable permissions.
