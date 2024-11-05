@@ -3,86 +3,13 @@ html, body {
   color: yellow;
 }
 
-body {
+.background {
   background-image: url("../images/myajima.png");
-  background-repeat:no-repeat;
-  background-position: center;
-  background-color: black;
-  background-size: cover;
-  overflow: scroll;
-  font-family: courier, mono;
-  padding: 10px;
-}
-
-h1 {
-  text-align: right;
-  text-transform: uppercase;
-}
-
-/* Lists */
-
-ul {
-  color: white;
-  text-align: right;
-}
-
-li {
-  text-align: right;
-  padding-top: 5px;
-  list-style: none;
-}
-
-code {
-  background-color: white;
-  opacity: 0.9;
-  color: black;
-  font-weight: bold;
-  padding: 15px;
-  border-radius: 15px;
-}
-
-article {
-  background-color: black;
   height: 100%;
-  opacity: 0.4;
-  margin: 5px;
-  padding: 15px;
-  border-radius: 15px;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
 }
 
-article li {
-  color: yellow;
-  text-align: left;
-  display: flex;
-}
-
-/* Links */
-
-a {
-  text-decoration: none;
-}
-
-/* unvisited link */
-a:link {
-  color: pink;
-}
-
-/* visited link */
-a:visited {
-  color: white;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-#index {
-  float: right;
-  text-align: right;
-}
-
-hr {
-  float: right;
-  width: 200px;
-}

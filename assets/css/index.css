@@ -1,9 +1,9 @@
-body {
+.background {
   background-image: url("../images/keem_achill.jpg");
-  background-repeat:no-repeat;
-  background-position: center;
-  background-color: black;
+  height: 100%;
+  width: auto;
   background-size: cover;
-  overflow: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
 }
-

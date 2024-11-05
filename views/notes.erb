@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<RDOCTYPE html>
 <html>
 <head>
   <meta charset='utf-8'>
@@ -10,9 +10,10 @@
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/header_footer.css'>
 </head>
 <body>
-  <%= render_partial('_header') %>
+  <div class="background"> 
+    <%= render_partial('_header') %>
 
-  <article class="notes">
+    <article class="notes">
       <summary><h2>Test feed using `entr`</h2></summary>
 
       <p>When you save a ruby file in that directory, the test refreshes and re-runs.</p>
@@ -47,8 +48,9 @@
         </li>
       </ul>
 
-  </article>
+    </article>
 
   <%= render_partial('_footer') %>
+  </div>
 </body>
 </html>

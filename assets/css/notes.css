@@ -1,11 +1,16 @@
 body {
-  background-image: url("../images/keel_achill.jpg");
-  background-repeat:no-repeat;
-  background-position: center;
-  background-color: black;
-  background-size: cover;
-  overflow: scroll;
   text-align: right;
+}
+
+.background {
+  background-image: url("../images/keel_achill.jpg");
+  height: 100%;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  padding: 20px;
 }
 
 article {
@@ -27,23 +32,7 @@ code {
   border-radius: 10px;
 }
 
-h2 {
-  font-family: tahoma;
-}
-
-header {
-  color: black;
-}
-
-/* ul { */
-/*   display: block; */
-/* } */
-
 /* Links */
-
-a {
-  text-decoration: none;
-}
 
 /* unvisited link */
 a:link {
@@ -58,9 +47,5 @@ a:visited {
 /* mouse over link */
 a:hover {
   color: hotpink;
-}
-
-footer {
-  position: relative;
 }
 

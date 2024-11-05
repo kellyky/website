@@ -9,13 +9,15 @@
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/header_footer.css'>
 </head>
 <body>
-  <%= render_partial('_header') %>
+  <div class="background">
+    <%= render_partial('_header') %>
 
     <ul>
       <li><a href="./today_i_learned.html">Today I Learned</a></li>
       <li><a href="./notes.html">[wip] Notes</a></li>
     </ul>
 
-  <%= render_partial('_footer') %>
+    <%= render_partial('_footer') %>
+  </div>
 </body>
 </html>
