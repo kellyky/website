@@ -4,7 +4,6 @@ html, body {
 }
 
 body {
-  font-family: courier, mono;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
   border-radius: 1rem;
 }
@@ -15,8 +14,16 @@ section {
   align-items: flex-end;
 }
 
+article {
+  width: 30%;
+}
+
+p {
+  font-family: "Proxima Nova";
+}
+
 h1, h2 {
-  text-transform: uppercase;
+  font-family: courier;
 }
 
 /* Lists */
@@ -27,6 +34,7 @@ ul {
 }
 
 li {
+  font-family: "Proxima Nova";
   text-align: right;
   padding-top: 5px;
   list-style: none;
@@ -40,12 +48,12 @@ a {
 
 /* unvisited link */
 a:link {
-  color: pink;
+  color: white;
 }
 
 /* visited link */
 a:visited {
-  color: white;
+  color: yellow;
 }
 
 /* mouse over link */
