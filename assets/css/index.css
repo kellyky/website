@@ -1,9 +1,8 @@
 body {
-  background: url("../images/keem_achill.jpg");
+  background: url("../images/phoenix.webp");
   height: 100%;
   width: auto;
-  background-size: cover;
+  background-size: cover 100%;
   background-position: center;
-  background-repeat: repeat-y;
-  padding: 20px;
+  background-repeat: no-repeat;
 }

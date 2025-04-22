@@ -1,21 +1,23 @@
 li.header, li.footer {
-  display: inline-block;
+  display: inline-flex;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #fefefe;
+  padding: 10px 16px;
+  border-bottom: 0.5px solid #353839;
 }
 
 footer {
-  position: absolute;
+  position: sticky;
   bottom: 0;
-  padding: 10px;
-  right: 0;
+  background: #e2dacd;
+  display: flex;
+  justify-content: flex-end;
   z-index: 10;
-}
-
-footer hr {
-  margin: 10px;
-}
-
-footer ul {
-  display: block;
+  border-top: 0.5px solid #353839;
 }
 
 footer li {
