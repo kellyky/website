@@ -1,8 +1,8 @@
 body {
   background: url("../images/phoenix.webp");
-  height: 100%;
+  height: 100vw;
   width: auto;
-  background-size: cover 100%;
-  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
