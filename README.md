@@ -3,10 +3,10 @@
 A website and maybe proto-portfolio.
 A place I enjoy working on, while I learn the things and share the learnings.
 
-Created initially as user space within [https://aavalam.org/](https://aavalam.org/). 
+Created initially as user space within [https://www.aavalam.org/](https://www.aavalam.org/).
 
 ## Visiting
-[https://aavalam.org/~kellyky/](https://aavalam.org/~kellyky/)
+[https://www.aavalam.org/~kellyky/](https://www.aavalam.org/~kellyky/)
 
 Or
 
